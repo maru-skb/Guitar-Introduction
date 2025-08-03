@@ -10,6 +10,7 @@ body {
 body.dark-mode {
   background-color: #1A1A1A;
   color: #F5F5F5;
+  transition: .5s;
 }
 
 .container {
@@ -480,5 +481,6 @@ img {
    }
  }
 }
+
 
 
