@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="light-mode">
+  <div id="loading">
+  <img class="spinner" src="https://assets.codepen.io/85188/loading.png" alt="Loading...">
+  </div>
+  <header>
+    <h1>
+      <a href="index.html" class="logo">
+        <img src="img/logo.jpg" alt="サイトのロゴ">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">ギターについて</a></li>
+        <li><a href="index.html#skills">スキル別ギター紹介</a></li>
+        <li><a href="index.html#videos">おすすめの動画</a></li>
+        <li><a href="contact.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle">🌙 モード切替</button>
+  </header>
+
+<!-- お問い合わせ -->
+<main class="lower-main">
+  <div class="lower-heading-group">
+    <h2>お問い合わせ</h2>
+    <p>ご不明点などがあれば、お気軽にお問い合わせください。</p>
+  </div>
+
+<!-- 入力欄 -->
+  <form class="form-box" action="https://api.staticforms.xyz/submit" method="POST">
+  <input type="hidden" name="accessKey" value="sf_346i5jgn973781k61j1l7mge">
+  <input type="hidden" name="redirectTo" value="https://maru-skb.github.io/guitar-intro/thanks.html">
+    <div class="form-item">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" placeholder="例）山田 太郎">
+    </div>
+
+    <div class="form-item">
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" placeholder="例）example@examlpe.com">
+    </div>
+
+    <div class="form-item">
+      <label for="message">お問い合わせ内容</label>
+      <textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください"></textarea>
+    </div>
+
+<!-- 送信ボタン -->
+    <div class="form-item">
+      <button type="submit">送信する</button>
+    </div>
+  </form>
+</main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">ギターについて</a></li>
+        <li><a href="index.html#skills">スキル別ギター紹介</a></li>
+        <li><a href="index.html#videos">おすすめの動画</a></li>
+        <li><a href="contact.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle">🌙 モード切替</button>
+  </footer>
+
+</body>
+</html>

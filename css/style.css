@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+/* 全体の設定 */
+body {
+  font-family: "Noto Sans JP", "Montserrat", sans-serif;
+  background-color: #F5F5F5;
+  color: #222222;
+}
+
+body.dark-mode {
+  background-color: #1A1A1A;
+  color: #F5F5F5;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-inline:0 40px;
+}
+
+.mode-toggle {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: #222222;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+
+/* ヘッダー */
+header {
+  background-color: #444444;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    img {
+      display: block;
+      height: 100px;
+    }
+  }
+  nav {
+    ul {
+      font-size: 20px;
+      display: flex;
+      gap: 30px;
+      color: #F5F5F5;
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+          color: orange;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .mode-toggle {
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+/* ヒーローセクション */
+.hero {
+  color:#F5F5F5;
+  text-align: center;
+  height: 640px;
+  padding-bottom: 30px;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+}
+
+/* ギターについて */
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h2 {
+  font-size: 30px;
+  font-weight: 700;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;  
+    gap: 60px;
+  }
+  .image {
+    border-radius: 40px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      aspect-ratio: 5 / 4;
+      object-fit: cover;
+    }
+  }
+  .text {
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+
+/* スキル別ギター紹介 */
+.heading-group {
+  padding-bottom: 20px ;
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.menu-card {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #222222;
+  border-radius: 20px;
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+    &:hover {
+    filter: brightness(45%);
+    }
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    span {
+      display: block;
+      font-size: 13px;
+      color: #222222;
+      margin-top: 6px;
+    }
+  }
+}
+
+/* 動画紹介 */
+.videos {
+  h2{
+    padding-top: 30px;
+    font-size: 34px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  background-color: #fff;
+  color: #222222;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .play-btn {
+    display: inline-block;
+    background-color: orange;
+    color: #F5F5F5;
+    padding: 1em 2em;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    &:hover {
+      background-color: rgb(114, 75, 1);
+    }
+  }
+}
+
+/* 終わり */
+.ending {
+  text-align: left;
+  .heading-group {
+    margin-bottom: 0px;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 34px;
+  }
+  .message {
+    margin-top: 0;
+    p {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+
+/* お問い合わせ */
+.contact {
+  padding-top: 20px;
+  text-align: center;
+  p {
+    margin-bottom:40px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    .label {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .number {
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: orange;
+      color: #F5F5F5;
+      padding: 1em;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      &:hover {
+        background-color: rgb(114, 75, 1);
+      }
+    }
+  }
+}
+
+/* フッター */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #444444;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    ul {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      color: #F5F5F5;
+      li a {
+        font-size: 14px;
+        &:hover {
+          color: orange;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* 紹介ページ */
+.intro {
+  padding-top: 30px ;
+  text-align: center;
+  h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  }
+  p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  }
+}
+
+.product-section {
+  h2 {
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .product-card {
+    padding-bottom: 20px;
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+    }
+    a {
+      font-weight: 700;
+      &:hover {
+          color: orange;
+          text-decoration: underline;
+        }
+    }
+  }
+}
+
+/* お問い合わせ */
+.lower-main {
+  display: block;
+  padding: 80px 0 100px;
+  width: 100%;
+}
+
+.lower-heading-group {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  margin: 0 0 40px;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.form-box {
+  max-width: 640px;
+  width: 100%;
+  box-sizing: border-box; 
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 60px;
+  background-color: #444444;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 24px 40px rgba(0,0,0,0.08);
+}
+
+.form-item {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+  label {
+    font-size: 14px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #aaa;
+    padding: 0.8em 0.5em;
+    border-radius: 8px;
+    &::placeholder {
+      color: #aaa;
+    }
+}
+button {
+    font-size: 16px;
+    display: inline-block;
+    background-color: orange;
+    color: #F5F5F5;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 8px;
+    &:hover {
+      background-color: rgb(114, 75, 1);
+    }
+  }
+}
+
+/* ローディング画面 */
+#loading {
+  transition: all 1s;
+  background-color: #ddd;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+}
+
+/* ローディング完了後にローディング画面を */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* コンテンツ部分 */
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* 送信完了 */
+.submit-main { 
+  width: 100%;
+  text-align: center; 
+}
+
+.submit-heading-group {
+  max-width: 600px;
+  margin: 0 auto;
+  h2 {
+    font-size: 28px;
+    padding-top: 140px;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .button {
+  margin-top: 20px; 
+  margin-bottom: 140px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: orange;
+  color: #F5F5F5;
+  border-radius: 6px; 
+   &:hover {
+   background-color: rgb(114, 75, 1); 
+   }
+ }
+}
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guitar</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="light-mode">
+  <div id="loading">
+  <img class="spinner" src="https://assets.codepen.io/85188/loading.png" alt="Loading...">
+  </div>
+  <header>
+    <h1>
+      <a href="index.html" class="logo">
+        <img src="img/logo.jpg" alt="サイトのロゴ">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#about">ギターについて</a></li>
+        <li><a href="#skills">スキル別ギター紹介</a></li>
+        <li><a href="#videos">おすすめの動画</a></li>
+        <li><a href="contact.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle">🌙 モード切替</button>
+  </header>
+
+  <main>
+<!-- ヒーローセクション -->
+    <section class="hero">
+      <h2>〜指先から広がる、音楽の世界〜</h2>
+      <p>たった6本の弦で無限の表現を生み出す</p>
+    </section>
+
+  <section id="about" class="main-section about">
+  <div class="container">
+    <div class="heading-group">
+      <h2>～ギターとは～</h2>
+    </div>
+    <div class="layout">
+      <div class="image">
+        <img src="img/intro.jpg" alt="ギターの写真">
+      </div>
+      <div class="text">
+        <h3>〜指先が奏でる、無限の音楽の旅へ〜</h3>
+        <p>ギターという楽器には、木の温もりを感じるアコースティックギターと、アンプを通して多彩なサウンドを生み出すエレキギターがあります。そのどちらにも深い魅力がありますが、今回はエレキギターにフォーカスしてご紹介します。</p>
+        <p>エレキギターは、アンプを通すことで幅広い音色が生まれ、クリーントーンから激しい歪みまで自在に表現可能で、ジャンルを問わず活躍し、弾き手の感情やニュアンスが音にそのまま反映されます。</p>
+        <p>このサイトでは、初心者から経験者まで、エレキギターに特化した情報をお届けします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- スキル別ギター紹介 -->
+<section id="skills" class="main-section menu">
+  <div class="container">
+    <div class="heading-group">
+      <h2>〜あなたにぴったりのギターを探そう〜</h2>
+    </div>
+    <ul id="skillLevels" class="menu-list">
+    </ul>
+  </div>
+</section>
+
+<!-- 動画紹介 -->
+<section id="videos" class="main-section videos">
+  <div class="container">
+    <div class="heading-group">
+      <h2>～おすすめの動画～</h2>
+      <p>ギターの習得に役立つ動画を、初心者から上級者まで幅広くセレクトしました</p>
+    </div>
+    <ul class="video-list">
+      <li class="video-card">
+        <h3>初心者向け</h3>
+        <p>ギターの基本フォームやコード進行を学べる入門動画です。</p>
+        <a href="https://www.youtube.com/watch?v=wK3HbaVrDu0" target="_blank" class="play-btn">▶再生する</a>
+      </li>
+      <li class="video-card">
+        <h3>中級者向け</h3>
+        <p>バッキングやスケール練習、ちょっとしたアドリブまで網羅した動画です。</p>
+        <a href="https://www.youtube.com/playlist?list=PLFWEp0mNjzVkWxY1Ai6pRdUGDINF39l0z" target="_blank" class="play-btn">▶再生する</a>
+      </li>
+      <li class="video-card">
+        <h3>上級者向け</h3>
+        <p>上級者向けのテクニックや演奏を学ぶことができる動画です。</p>
+        <a href="https://www.youtube.com/watch?v=X9OfLwXFZ2U" target="_blank" class="play-btn">▶再生する</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 終わりに -->
+<section id="closing" class="main-section ending">
+  <div class="container">
+    <div class="heading-group">
+      <h2>～終わりに～</h2>
+    </div>
+    <div class="message">
+      <p>
+        初心者でもギターは必ず上達します。<br>
+        大切なのは、楽しむこと・続けることです。<br>
+        動画や練習メニューを活用して、あなたなりに始めてみてください。<br>
+        もし最初の一歩を踏み出せたなら、あなたはもうギタリストです。
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- お問い合わせ -->
+  <section class="main-section contact" id="contact">
+    <div class="container">
+      <div class="heading-group">
+        <h2>お問い合わせ</h2>
+      </div>
+      <p>ギターのこと、サイトのこと、気になることがあればお気軽にご連絡ください。</p>
+      <div class="layout">
+        <div class="tel">
+          <p class="label">電話でのお問い合わせ</p>
+          <a href="tel:09025774162" class="number">📞 090-2577-4162</a>
+        </div>
+        <div class="form">
+          <p class="label">フォームでのお問い合わせ</p>
+          <a href="contact.html" class="button">お問い合わせフォームへ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#about">ギターについて</a></li>
+        <li><a href="#skills">スキル別ギター紹介</a></li>
+        <li><a href="#videos">おすすめの動画</a></li>
+        <li><a href="contact.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="mode-toggle">🌙 モード切替</button>
+  </footer>
+
+</body>
+</html>
