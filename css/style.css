@@ -5,12 +5,12 @@ body {
   font-family: "Noto Sans JP", "Montserrat", sans-serif;
   background-color: #F5F5F5;
   color: #222222;
+  transition: .5s;
 }
 
 body.dark-mode {
   background-color: #1A1A1A;
   color: #F5F5F5;
-  transition: .5s;
 }
 
 .container {
@@ -481,6 +481,7 @@ img {
    }
  }
 }
+
 
 
 
