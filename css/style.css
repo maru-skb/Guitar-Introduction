@@ -355,7 +355,7 @@ footer {
 /* お問い合わせ */
 .lower-main {
   display: block;
-  padding: 80px 0 100px;
+  padding: 80px;
   width: 100%;
 }
 
@@ -481,6 +481,7 @@ img {
    }
  }
 }
+
 
 
 
